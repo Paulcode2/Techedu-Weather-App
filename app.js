@@ -49,3 +49,5 @@ searchInput.addEventListener("keydown", (event) => {
     searchInput.value = "";
   }
 });
+
+console.log(weatherData);
