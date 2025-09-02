@@ -39,6 +39,11 @@ const checkWeather = async (city) => {
 };
 
 
+searchBtn.addEventListener("click", () => {
+  checkWeather(searchInput.value);
+  searchInput.value = "";
+});
+
 
 // git branch
 // git checkout
