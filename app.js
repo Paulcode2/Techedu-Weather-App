@@ -39,10 +39,19 @@ const checkWeather = async (city) => {
 };
 
 
+searchInput.addEventListener("keydown", (event) => {
+  if (event.key === "Enter" || event.key === "Return") {
+    checkWeather(searchInput.value);
+    searchInput.value = "";
+  }
+});
+
+
 searchBtn.addEventListener("click", () => {
   checkWeather(searchInput.value);
   searchInput.value = "";
 });
+
 
 
 // git branch
