@@ -50,4 +50,3 @@ searchInput.addEventListener("keydown", (event) => {
   }
 });
 
-console.log(weatherData);
